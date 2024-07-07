@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badut Kita</title>
+
+  <!-- tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- flowbite -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- bootstaro icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- fav-icon -->
+  <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+        },
+        extend: {
+          colors: {
+            pink: '#E96880',
+            cream: '#F9F0DC',
+            blue: '#5FA2BF',
+            yellow: '#F0C760',
+            green: '#85BA6C'
+          },
+          fontFamily: {
+            starborn: ["Starborn", "sans-serif"],
+            copyduck: ["Copyduck", "sans-serif"],
+            inter: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream">
+  <!-- Navbar -->
+  <nav
+    class="z-10 bg-white border-b border-gray-200 border-gray-200dark:bg-gray-900 backdrop-filter backdrop-blur-lg bg-opacity-30">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./assets/Logo.png" class="h-10" alt="Badut-kita" />
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="flex flex-col p-4 mt-4 font-normal border border-gray-100 rounded-lg lg:bg-transparent md:p-0 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html"
+              class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Beranda</a>
+          </li>
+          <li>
+            <a href="daftar-harga.html"
+              class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Daftar
+              Harga</a>
+          </li>
+          <li>
+            <a href="galeri.html"
+              class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Galeri</a>
+          </li>
+          <li>
+            <a href="kontak.html"
+              class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Hero Section -->
+  <section id="beranda" class="pt-32 pb-28 bg-pink">
+    <div class="container px-6 m-auto">
+      <div class="flex flex-wrap">
+        <div class="self-center w-full px-2 md:px-6 lg:w-1/2">
+          <h1 class="text-3xl text-white md:text-3xl text- font-starborn"><span
+              class="text-yellow">BADUT</span> KITA</h1>
+          <p class="pt-2 font-normal text-white text-sm lg:text-[28px] tracking-wide">Sewa Badut Murah Jabodetabek</p>
+          <button class="bg-green text-white py-3 px-4 rounded lg:mt-6 mt-2 lg:text-[16px] text-sm"><a
+              href="https://wa.me/628170957772?text=Hallo,%0ASaya%20mau%20pesan">Pesan Sekarang</a></button>
+        </div>
+        <div class="self-center w-full px-2 md:px-6 lg:w-1/2">
+          <div class="relative flex justify-center mt-10 lg:justify-end lg:mt-0">
+            <img src="./assets/hero.png" alt="Badut-kita">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section -->
+
+  <!-- carousel -->
+  <section class="pt-20">
+    <div class="container m-auto">
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./assets/carousel-1.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./assets/carousel-2.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./assets/carousel-3.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- carousel -->
+
+  <!-- Daftar Harga -->
+  <section class="pt-20">
+    <div class="container">
+      <h1 class="text-3xl text-center md:text-5xl font-starborn text-green">Daftar Harga</h1>
+      <div class="grid grid-cols-2 gap-4 p-2 px-6 mt-10 lg:grid-cols-3">
+        <!-- card1 -->
+        <div class="p-2 text-center rounded-lg bg-yellow">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket A>
+          </h3>
+          <p class="p-2 text-lg text-white">1 MC Badut</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 400.000</p>
+        </div>
+        <!-- card2 -->
+        <div class="p-2 text-center rounded-lg bg-pink">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket A2>
+          </h3>
+          <p class="p-2 text-lg text-white">1 MC Casual</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 500.000</p>
+        </div>
+        <!-- card3 -->
+        <div class="p-2 text-center rounded-lg bg-blue">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket B>
+          </h3>
+          <p class="pt-2 text-lg text-white">1 MC Badut</p>
+          <p class="pb-2 text-lg text-white">1 Badut Karakter</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 750.000</p>
+        </div>
+        <!-- card4 -->
+        <div class="p-2 text-center rounded-lg bg-pink">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket B2>
+          </h3>
+          <p class="pt-2 text-lg text-white">1 MC Casual</p>
+          <p class="pb-2 text-lg text-white ">1 Badut Karakter</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 850.000</p>
+        </div>
+        <!-- card5 -->
+        <div class="p-2 text-center rounded-lg bg-blue">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket C>
+          </h3>
+          <p class="pt-2 text-lg text-white">1 MC Badut</p>
+          <p class="pb-2 text-lg text-white ">2 Badut Karakter</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 1.100.000</p>
+        </div>
+        <!-- card6 -->
+        <div class="p-2 text-center rounded-lg bg-yellow">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket C2>
+          </h3>
+          <p class="pt-2 text-lg text-white">1 MC Casual</p>
+          <p class="pb-2 text-lg text-white ">2 Badut Karakter</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 1.200.000</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 p-2 px-6 lg:grid-cols-2">
+        <!-- card7 -->
+        <div class="p-2 text-center rounded-lg bg-pink">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket D>
+          </h3>
+          <p class="pt-2 text-lg text-white">1 MC Badut</p>
+          <p class="pb-2 text-lg text-white ">2 Badut Karakter</p>
+          <p class="pb-2 text-lg text-white ">1 Pesulap Full Trik</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 1.900.000</p>
+        </div>
+        <!-- card8 -->
+        <div class="p-2 text-center rounded-lg bg-pink">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket D2>
+          </h3>
+          <p class="pt-2 text-lg text-white">1 MC Casual</p>
+          <p class="pb-2 text-lg text-white ">2 Badut Karakter</p>
+          <p class="pb-2 text-lg text-white ">1 Pesulap Full Trik</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 2.000.000</p>
+        </div>
+        <!-- card9 -->
+        <div class="p-2 text-center rounded-lg bg-blue">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket E>
+          </h3>
+          <p class="pt-2 text-lg text-white">1 MC Badut</p>
+          <p class="pb-2 text-lg text-white ">2 Badut Karakter</p>
+          <p class="pb-2 text-lg text-white ">1 Pesulap Full Trik</p>
+          <p class="pb-2 text-lg text-white ">Dekor 300 Balon</p>
+          <p class="pb-2 text-lg text-white ">Banner Ultah</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 2.900.000</p>
+        </div>
+        <!-- card10 -->
+        <div class="p-2 text-center rounded-lg bg-yellow">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < Paket E2>
+          </h3>
+          <p class="pt-2 text-lg text-white">1 MC Casual</p>
+          <p class="pb-2 text-lg text-white ">2 Badut Karakter</p>
+          <p class="pb-2 text-lg text-white ">1 Pesulap Full Trik</p>
+          <p class="pb-2 text-lg text-white ">Dekor 300 Balon</p>
+          <p class="pb-2 text-lg text-white ">Banner Ultah</p>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 3.000.000</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 p-2 px-6">
+        <div class="p-2 text-center rounded-lg bg-pink">
+          <h3 class="p-2 text-3xl text-white font-copyduck">
+            < PAKET all in package>
+          </h3>
+          <p class="p-2 text-lg text-white font-copyduck">Rp. 5.500.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Daftar Harga -->
+
+  <!-- Galeri -->
+  <section class="pt-32">
+    <div class="container">
+      <h1 class="text-3xl text-center md:text-5xl font-starborn text-blue">Galeri</h1>
+      <div class="grid grid-cols-2 gap-4 p-2 px-6 mt-10 lg:grid-cols-3">
+        <!-- img1 -->
+        <div>
+          <img src="./assets/image/img-1.png" alt="Badut-kita">
+        </div>
+        <!-- img2 -->
+        <div>
+          <img src="./assets/image/img-2.png" alt="Badut-kita">
+        </div>
+        <!-- img3 -->
+        <div>
+          <img src="./assets/image/img-3.png" alt="Badut-kita">
+        </div>
+        <!-- img4 -->
+        <div>
+          <img src="./assets/image/img-4.png" alt="Badut-kita">
+        </div>
+        <!-- img5 -->
+        <div>
+          <img src="./assets/image/img-5.png" alt="Badut-kita">
+        </div>
+        <!-- img6 -->
+        <div>
+          <img src="./assets/image/img-6.png" alt="Badut-kita">
+        </div>
+        <!-- button -->
+      </div>
+      <div class="text-center">
+        <button class="bg-yellow text-black py-3 px-4 rounded lg:mt-6 mt-2 lg:text-[16px] text-sm"><a
+            href="galeri.html">Lihat Semua</a></button>
+      </div>
+    </div>
+  </section>
+  <!-- Galeri -->
+
+  <!-- Kontak -->
+  <section class="pt-32 pb-28">
+    <div class="container">
+      <h1 class="text-3xl text-center md:text-5xl font-starborn text-pink">Kontak Kami</h1>
+      <div class="w-full mx-auto mt-10">
+        <div class="w-full p-4 mx-auto rounded-lg p lg:w-1/2 bg-blue">
+          <div class="flex justify-center">
+            <div class="flex flex-col gap-4">
+              <p class="inline-flex text-lg text-cream"><i data-feather="mail" class="me-2"></i>adwi4134@gmail.com</p>
+              <p class="inline-flex text-lg text-cream"><i data-feather="phone" class="me-2"></i>08170957772</p>
+              <p class="inline-flex text-lg text-cream"><i data-feather="instagram" class="me-2"></i>badut_kita</p>
+              <p class="inline-flex text-lg text-cream"><i data-feather="map-pin" class="me-2"></i>kp. sindangkarsa
+                tapos,
+                depok 16462</p>
+              <button class="bg-yellow text-black py-2 px-4 rounded lg:mt-6 mt-1 lg:text-[16px] text-sm"><a
+                  href="mailto:adwi4134@gmail.com">Kirim Email</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Kontak -->
+
+  <!-- Footer -->
+  <section class="pt-10 bg-green">
+    <div class="container">
+      <div class="px-6">
+        <img src="./assets/Logo.png" alt="Badut-kita" width="20%">
+        <p class="pt-2 pb-2 text-cream">Jasa sewa badut murah jabodetabek</p>
+        <p class="pt-2 pb-2 text-sm text-center text-cream">2024 Badut Kita © All Right Reserved</p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+
+  <!-- WA -->
+  <a href="https://wa.me/628170957772?text=Hallo,%0ASaya%20mau%20pesan"
+    class=" h-14 w-14 bg-green rounded-full fixed z-[9999] bottom-4 right-4 flex justify-center items-center hover:animate-pulse"
+    id="to-top">
+    <span class="text-xl text-cream"><i class="bi bi-whatsapp"></i></span>
+  </a>
+  <!-- WA -->
+
+  <!-- Flowbite -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
