@@ -49,6 +49,22 @@
       }
     }
   </script>
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+    @font-face {
+      font-family: "starborn";
+      src: url("./assets/Starborn.ttf");
+      }
+    @font-face {
+      font-family: "copyduck";
+      src: url("./assets/Copyduck.ttf");
+      }
+  </style>
 </head>
 
 <body class="bg-cream">
@@ -99,7 +115,7 @@
     <div class="container px-6 m-auto">
       <div class="flex flex-wrap">
         <div class="self-center w-full px-2 md:px-6 lg:w-1/2">
-          <h1 class="text-3xl text-white md:text-3xl text- font-starborn"><span
+          <h1 class="text-5xl text-white font-starborn"><span
               class="text-yellow">BADUT</span> KITA</h1>
           <p class="pt-2 font-normal text-white text-sm lg:text-[28px] tracking-wide">Sewa Badut Murah Jabodetabek</p>
           <button class="bg-green text-white py-3 px-4 rounded lg:mt-6 mt-2 lg:text-[16px] text-sm"><a
